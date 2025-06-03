@@ -85,3 +85,31 @@
 .stars{
     padding: 0.5rem 0;
 }
+
+.topicos{
+    background: var(--azul-degrade);
+    color: var(--branco);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.topicos__lista{
+    padding: 2rem 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.topicos__lista__item{
+    background-color: var(--laranja);
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+}
+
+.topicos__lista__link{
+    text-decoration: none;
+    color: var(--branco);
+}
