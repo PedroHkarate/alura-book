@@ -1,16 +1,16 @@
-.topicos{
+.topicos {
     background: var(--azul-degrade);
     color: var(--branco);
     text-align: center;
     padding: 1.5rem 0;
 }
 
-.topicos__titulo{
+.topicos__titulo {
     font-size: 1rem;
     font-weight: 300;
 }
 
-.topicos__lista{
+.topicos__lista {
     padding-top: 2rem;
     display: flex;
     justify-content: center;
@@ -20,14 +20,24 @@
     text-decoration: none;
 }
 
-.topicos__lista__item{
+.topicos__lista__item {
     background-color: var(--laranja);
     font-weight: 600;
     font-size: 0.87rem;
     padding: 1rem 1.5rem;
 }
 
-.topicos__lista__link{
+.topicos__lista__link {
     text-decoration: none;
     color: var(--branco);
+}
+
+@media screen and (min-width: 1024px) {
+    .topicos__titulo, .topicos__lista__link {
+        font-size: 1.5rem;
+    }
+
+    .topicos__lista__item{
+        padding: 1.5rem 2rem;
+    }
 }
