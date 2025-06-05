@@ -1,4 +1,4 @@
-.carrossel__titulo{
+.carrossel__titulo {
     color: var(--laranja);
     background-color: var(--branco);
     text-align: center;
@@ -8,20 +8,21 @@
     padding: 1rem 0 0.5rem 0;
 }
 
-.swiper-slide img{
+.swiper-slide img {
     width: 100%;
 }
 
-.swiper-button-prev, .swiper-button-next{
+.swiper-button-prev,
+.swiper-button-next {
     display: none;
 }
 
-.swiper-pagination{
+.swiper-pagination {
     position: initial;
     margin: 0.5rem 0;
 }
 
-.card{
+.card {
     background: var(--branco);
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -29,44 +30,44 @@
     padding: 1rem;
 }
 
-.card-descricao{
+.card-descricao {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
 }
 
-.descricao__titulo{
+.descricao__titulo {
     color: var(--laranja);
     font-weight: 700;
 }
 
-.descricao__titulo-livro{
+.descricao__titulo-livro {
     color: var(--azul);
     font-weight: 700;
     font-size: 1.12rem;
     margin: 0.5rem 0;
 }
 
-.descricao__texto{
+.descricao__texto {
     font-size: 0.87rem;
     font-weight: 400;
     color: var(--preto);
 }
 
-.card__botoes{
+.card__botoes {
     display: flex;
     justify-content: space-between;
 }
 
-.botoes{
+.botoes {
     display: flex;
 }
 
-.botoes__item{
+.botoes__item {
     margin: 0 0.5rem;
 }
 
-.botoes__ancora{
+.botoes__ancora {
     text-decoration: none;
     background-color: var(--laranja);
     color: var(--branco);
@@ -75,13 +76,39 @@
     font-weight: 700;
 }
 
-.descricao__nome-autor-mês{
+.descricao__nome-autor-mês {
     color: var(--azul);
     font-weight: 700;
     font-size: 1.12rem;
     margin: 0.5rem 0;
 }
 
-.stars{
+.stars {
     padding: 0.5rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .carrossel__titulo {
+        font-size: 1.62rem;
+    }
+
+    .swiper-pagination {
+        margin: 2rem 0 3rem 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        display: block;
+        top: 60%;
+    }
+
+    .card{
+        width: 50%;
+        margin: 2rem auto;
+    }
+
 }
