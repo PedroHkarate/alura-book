@@ -68,6 +68,10 @@
     display: none;
 }
 
+.titulo-icone{
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
 
     .cabecalho__menu-hamburguer {
@@ -118,5 +122,29 @@
 
     .container__img-transparent {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .titulo-icone{
+        display: block;
+    }
+
+    .cabecalho{
+        padding: 0 2rem;
+    }
+
+    .opcoes{
+        margin-right: auto;
+        margin-left: 4rem;
+    }
+
+    .cabecalho__container-icone{
+        display: flex;
+        align-items: center;
+        margin: 0 1rem;
+        text-decoration: none;
+        color: var(--preto);
+        font-size: 1.25rem;
     }
 }
