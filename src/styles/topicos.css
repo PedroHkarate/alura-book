@@ -39,6 +39,13 @@
 
     .topicos__lista__item{
         padding: 1.5rem 2rem;
+        cursor: pointer;
+    }
+
+    .topicos__lista__item:hover{
+        background-color: var(--azul-claro);
+        transform: scale(1.05);
+        /* transition: 100ms; */
     }
 }
 

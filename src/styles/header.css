@@ -15,6 +15,14 @@
     background-repeat: no-repeat;
 }
 
+.container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer {
+    background-image: url(/src/img/Menu-selecionado.svg);
+}
+
+.container__botao:checked~.container__rotulo {
+    background: var(--azul-degrade);
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -22,7 +30,7 @@
 }
 
 .container__img {
-    padding: 1rem;
+    padding: 1rem 1rem;
 }
 
 .lista-menu {
@@ -30,7 +38,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    width: 60vw;
+    width: auto;
 }
 
 .container__botao {
@@ -68,7 +76,7 @@
     display: none;
 }
 
-.titulo-icone{
+.titulo-icone {
     display: none;
 }
 
@@ -98,7 +106,7 @@
     }
 
     .opcoes__item {
-        padding: 0 1rem;
+        padding: 1.5rem;
         text-transform: uppercase;
     }
 
@@ -113,6 +121,11 @@
 
     .lista-menu {
         left: auto;
+        top: 90%;
+    }
+
+    .lista-menu__item{
+        padding: 1.5rem;
     }
 
     .opcoes__botao:checked~.lista-menu {
@@ -123,28 +136,67 @@
     .container__img-transparent {
         display: none;
     }
+
+    .opcoes__item:hover {
+        background: var(--azul-degrade);
+        color: var(--branco);
+        cursor: pointer;
+
+        .opcoes__link {
+            color: var(--branco);
+        }
+    }
+
+    .opcoes__botao:checked~.opcoes__rotulo>.opcoes__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover>.lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
 }
 
 @media screen and (min-width: 1728px) {
-    .titulo-icone{
+    .titulo-icone {
         display: block;
+        padding: 0 1rem;
     }
 
-    .cabecalho{
+    .cabecalho {
         padding: 0 2rem;
     }
 
-    .opcoes{
+    .opcoes {
         margin-right: auto;
         margin-left: 4rem;
     }
 
-    .cabecalho__container-icone{
+    .cabecalho__container-icone {
         display: flex;
         align-items: center;
         margin: 0 1rem;
         text-decoration: none;
         color: var(--preto);
         font-size: 1.25rem;
+    }
+
+    .cabecalho__container-icone:hover {
+        background: var(--azul-degrade);
+
+        .sacola {
+            content: url(/src/img/Sacola-selecionada.svg);
+        }
+
+        .usuario {
+            content: url(/src/img/Usuário-selecionado.svg);
+        }
+
+        -webkit-text-fill-color: var(--branco);
     }
 }
