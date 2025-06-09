@@ -36,10 +36,12 @@ hr {
         flex-direction: column;
         font-size: 0.87rem;
         color: var(--cinza);
+        margin-top: 1.5rem;
     }
 
     .rodape__conteudo__titulo{
         margin: 1.5rem;
+        margin-top: 0;
         bottom: 1rem;
     }
 
@@ -52,4 +54,11 @@ hr {
         color: var(--cinza-2);
     }
 
+}
+
+@media screen and (min-width: 1728px) {
+
+    .rodape__conteudo{
+        border-left: 2px solid var(--cinza);
+    }
 }
